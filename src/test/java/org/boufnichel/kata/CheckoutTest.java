@@ -21,4 +21,11 @@ class CheckoutTest {
         Bag bag = new Bag("Cornflex:2:50#Milka:1:10");
         assertEquals(110, bag.calculate());
     }
+
+    @Test
+    @DisplayName("Tva")
+    void test_tva() {
+        Bag bag = new Bag("Cornflex:2:50#Milka:1:10#TVA:20");
+        assertEquals(132, bag.calculate());
+    }
 }
