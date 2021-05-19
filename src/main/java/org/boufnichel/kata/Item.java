@@ -1,20 +1,20 @@
 package org.boufnichel.kata;
 
+import lombok.Builder;
+
+@Builder
 public class Item {
 
     private String name;
     private Integer price;
-
-    public Item(String name, Integer price) {
-        this.name = name;
-        this.price = price;
-    }
-
-    public String getName() {
-        return name;
-    }
+    private Integer quantity;
+    ;
 
     public Integer getPrice() {
         return price;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
     }
 }
