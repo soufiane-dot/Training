@@ -3,6 +3,8 @@ package org.boufnichel.kata;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.training.Bag;
+
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
